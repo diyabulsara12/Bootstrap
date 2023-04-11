@@ -1,0 +1,48 @@
+:root{
+    --bs-body-font-famil: 'Inter';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color:  #E5E5E5;
+    
+	/* margin: 0 auto !important; 
+    float: none !important;  */
+}
+.card{
+    width: 100%;
+    max-width: 874px; 
+   
+}
+.name{
+    color: #284B80;
+    font-size: 32px;
+}
+.card-text{
+    color: #8D98AA;
+    font-size: 20px;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+.caption-2{
+    color: #284B80;
+    font-size: 28px;
+}
+.caption-1{
+    color: #8D98AA;
+    font-size: 16px;
+}
+.connect-btn-text{
+    font-size: 20px;
+    color: #1DC6BB;;
+}
+.follow-btn-text{
+    font-size: 20px;
+    color: white;
+}
