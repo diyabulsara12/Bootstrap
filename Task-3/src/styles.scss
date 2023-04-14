@@ -1,0 +1,57 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color:black ;
+}
+.card{
+   
+}
+$red:#EB5757;
+$white: #FFFFFF;
+$blue-gray: #90A4AE;
+$black:#000000;
+
+.bg-color{
+    background-color:$red ;
+}
+.card {
+    border-radius: 10px;
+}
+
+.card-title{
+font-weight: 400;
+font-size: 13px;
+color:$white;
+}
+.course-name{
+    color: $white;
+    font-weight: 600;
+    font-size: 24px;
+    }   
+    .caption{
+        font-weight: 400;
+        font-size: 13px;
+        color: $white;
+
+    }
+    .ch-no{
+font-weight: 400;
+font-size: 13px;
+color: $blue-gray;
+    }
+    .ch-title{
+        font-weight: 600;
+font-size: 32px;
+color: $black;
+    }
+    .progress-status{
+        font-weight: 400;
+font-size: 8px;
+color: $blue-gray;
+    }
+    // .follow-btn-text{
+    //     border-radius: 32px;
+    // }
+    .digital-marketing{
+        border-top-left-radius: 5px;
+    }

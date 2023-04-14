@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-green {
+  color: #07e1fc;
+}
+
+.text-purple {
+  color: #654693;
+}
+
+.text-yellow {
+  color: #ffc801;
+}
+
+.text-red {
+  color: #a32b2d;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.felx-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  background-color: #15181b;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  color: #f1f9ff;
+  padding-left: 10px;
+}
+
+.logo {
+  display: flex;
+  padding: 20px 10px 20px 10px;
+}
+
+.nav-container {
+  padding: 0 0 0 10px;
+  overflow: auto;
+}
+.nav-container ul .list-item {
+  list-style: none;
+  color: #f1f9ff;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  margin-bottom: 15px;
+}
+.nav-container ul .list-item a {
+  font-size: 25px;
+}
+
+.link {
+  text-decoration: none;
+  width: 100%;
+  color: #f1f9ff;
+  padding: 15px 10px 15px 10px;
+}
+
+.list-item:hover {
+  background-color: #111111;
+  color: #07e1fc;
+  border-radius: 10px;
+}
+
+.continer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.header .head-title {
+  color: #f1f9ff;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.header .right-div {
+  margin: 30px;
+}
+.header .image {
+  padding-right: 10px;
+}
+.header .emp-name {
+  color: #f1f9ff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.header .mail {
+  color: #869ea8;
+}
+
+.card-section {
+  color: #f1f9ff;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.card-section .card {
+  background-color: #15181b;
+  max-width: 300px;
+  padding: 25px;
+  margin: 25px;
+}
+.card-section .card ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

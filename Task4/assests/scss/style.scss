@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$dark-gray:#15181b;
+$black:#111111;
+$white:#f1f9ff;
+$green:#07e1fc;
+$purple:#654693;
+$yellow:#ffc801;
+$red:#a32b2d;
+
+@mixin padding($top,$right,$bottom,$left){
+    padding: $top $right $bottom $left;
+ }
+
+ $colors: ("green": $green, "purple": $purple, "yellow":$yellow ,"red":$red );
+ @each $name, $value in $colors {
+    .text-#{$name} {
+      color: $value;
+    }
+  }
+  
+
+.d-flex
+{display: flex;}
+.felx-col{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color:$black ;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.main-container{
+    display: flex;
+    height: 100%;
+}
+.sidebar{
+    height: 100%;
+    width: 300px;
+    background-color:$dark-gray ;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   
+}
+.title{
+    color:$white;
+    padding-left: 10px;
+}
+.logo{
+    display: flex;
+    @include padding(20px,10px ,20px ,10px );
+}
+.nav-container{
+    @include padding(0,0 ,0 ,10px );
+    overflow: auto;
+   
+    ul{
+        .list-item{
+            list-style: none;
+            color: $white;
+            font-size: 20px;
+            @include padding(15px,25px ,15px ,25px );
+            margin-bottom: 15px;
+           
+
+            a{
+                font-size:25px;
+            }
+        }
+        }
+
+       
+}
+.link{
+    text-decoration: none ;
+    width: 100% ;
+    color: $white;
+    @include padding(15px,10px ,15px ,10px );
+    }
+
+.list-item{
+    &:hover {
+        background-color: $black;
+        color:$green;
+        border-radius: 10px;
+    }
+    // @include padding(15px,25px ,15px ,30px );
+}
+.continer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid white;
+
+    .head-title{
+        color: $white; 
+        margin-top: 30px ;
+        margin-left: 20px;
+    }
+    .right-div{
+       margin: 30px;
+    }
+    .image{
+        padding-right: 10px;
+    }
+    .emp-name{
+        color: $white;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+    .mail{
+        color:#869ea8;
+    }
+
+}
+.card-section{
+   color: #f1f9ff;
+ 
+   overflow: auto;
+  
+   flex-wrap: wrap;
+   .card{
+    background-color: $dark-gray;
+    max-width: 300px;
+    padding: 25px;
+    margin: 25px;
+    ul{
+        list-style: none;
+    }
+   }
+}
+
+
+
